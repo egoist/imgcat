@@ -4,13 +4,13 @@
 
 ## Install
 
-```
+```bash
 $ npm install -g imgcat
 ```
 
 ## Usage
 
-```js
+```bash
 $ imgcat a.jpg
 ```
 
