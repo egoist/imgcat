@@ -18,4 +18,4 @@ $ imgcat a.jpg
 
 ## License
 
-MIT © [EGOIST](https://github.com/egoist)
+The shell script is borrowed from https://iterm2.com/imgcat.
