@@ -1,6 +1,6 @@
 {
   "name": "imgcat",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Display image in iTerm2 version 2.9+",
   "bin": "imgcat",
   "main": "index.js",
