@@ -15,7 +15,7 @@ $ npm install --save imgcat
 **imgcat(file[, width], callback)**
 
 ```js
-imgcat('foo.jpg', img => {
+imgcat('foo.jpg', (err, img) => {
 	console.log(img)
 })
 ```
