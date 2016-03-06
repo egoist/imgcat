@@ -2,18 +2,59 @@
 
 > Display image in iTerm2 version 2.9+
 
-![imgcat](https://ooo.0o0.ooo/2016/02/19/56c6b1d80c800.png)
+![imgcat](/media/imgcat.png)
 
 ## Install
+
+```bash
+$ npm install --save imgcat
+```
+
+## Usage
+
+### callback mode
+
+**imgcat(file[, width], callback)**
+
+```js
+imgcat('foo.jpg', img => {
+	console.log(img)
+})
+```
+
+### Promise mode
+
+**imgcat(file[, width])**
+
+```js
+imgcat('foo.jpg')
+	.then(img => {
+		console.log(img)
+	})
+```
+
+### Sync mode
+
+**imgcat.sync(file[, width])**
+
+```js
+const img = imgcat.sync(file)
+console.log(img)
+```
+
+## CLI
+
+### Install
 
 ```bash
 $ npm install -g imgcat
 ```
 
-## Usage
+### Usage
 
 ```bash
 $ imgcat a.jpg
+$ imgcat -h
 ```
 
 ## License
