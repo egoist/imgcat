@@ -18,7 +18,8 @@
     "test": "node test"
   },
   "files": [
-    "imgcat"
+    "imgcat",
+    "cli.js"
   ],
   "keywords": [
     "imgcat",
