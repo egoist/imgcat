@@ -10,15 +10,7 @@ $ npm install --save imgcat
 
 ## Usage
 
-### callback mode
-
-**imgcat(file[, width], callback)**
-
-```js
-imgcat('foo.jpg', (err, img) => {
-	console.log(img)
-})
-```
+`imgcat` can automatically detect iTerm and iTerm version.
 
 ### Promise mode
 
@@ -28,6 +20,9 @@ imgcat('foo.jpg', (err, img) => {
 imgcat('foo.jpg')
 	.then(img => {
 		console.log(img)
+	})
+	.catch(e => {
+		console.log(e.message)
 	})
 ```
 
