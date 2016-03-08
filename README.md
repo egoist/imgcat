@@ -1,4 +1,4 @@
-#imgcat [![NPM version](https://img.shields.io/npm/v/imgcat.svg)](https://npmjs.com/package/imgcat) [![NPM downloads](https://img.shields.io/npm/dm/imgcat.svg)](https://npmjs.com/package/imgcat)
+# imgcat [![NPM version](https://img.shields.io/npm/v/imgcat.svg)](https://npmjs.com/package/imgcat) [![NPM downloads](https://img.shields.io/npm/dm/imgcat.svg)](https://npmjs.com/package/imgcat)
 
 > Display image in iTerm2 version 2.9+
 
@@ -10,7 +10,7 @@ $ npm install --save imgcat
 
 ## Usage
 
-`imgcat` can automatically detect iTerm and iTerm version.
+`imgcat` can automatically detect [iTerm](https://github.com/arthurvr/is-iterm) and [iTerm version](https://github.com/egoist/iterm-version).
 
 ### Promise mode
 
