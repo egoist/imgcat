@@ -19,7 +19,7 @@
   },
   "files": [
     "imgcat",
-    "cli.js"
+    "index.js"
   ],
   "keywords": [
     "imgcat",
