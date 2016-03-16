@@ -1,6 +1,6 @@
 {
   "name": "imgcat",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Display image in iTerm2 version 2.9+",
   "license": "MIT",
   "repository": "egoist/imgcat",
