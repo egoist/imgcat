@@ -10,8 +10,9 @@ const pget = require('pget')
 module.exports = co.wrap(function* (file, options, events) {
   const on = events || {}
   on.before && on.before()
+  let tempPath
   if (isUrl(file)) {
-    const tempPath = tempFile()
+    tempPath = tempFile()
     const dir = path.dirname(tempPath)
     const target = path.basename(tempPath)
     on.beforeDownload && on.beforeDownload()
@@ -22,4 +23,5 @@ module.exports = co.wrap(function* (file, options, events) {
     yield termImg(file, options)
   }
   on.after && on.after()
+  return tempPath || file
 })

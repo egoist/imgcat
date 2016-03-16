@@ -15,6 +15,9 @@ const imgcat = require('imgcat')
 
 // print image from file
 imgcat('a.gif')
+  .then(tempPath => {
+    console.log(`temp path of the downloaded image: ${tempPath}`)
+  })
   .catch(e => {
     console.log(e.name)
   })

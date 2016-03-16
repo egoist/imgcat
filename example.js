@@ -4,7 +4,8 @@ const imgcat = require('./')
 
 co(function* () {
   console.log('file')
-  yield imgcat('fixture.gif')
+  const tempPath = yield imgcat('fixture.gif')
+  console.log(tempPath)
   console.log('url')
   let time = new Date().getTime()
   const events = {
@@ -22,7 +23,8 @@ co(function* () {
       console.log('after')
     }
   }
-  yield imgcat('http://ww4.sinaimg.cn/large/a15b4afegw1enz38of1lug20dw07t1kx.gif', {}, events)
+  const tempPath2 = yield imgcat('http://ww4.sinaimg.cn/large/a15b4afegw1enz38of1lug20dw07t1kx.gif', {}, events)
+  console.log(tempPath2)
 }).catch(e => {
   console.log(e.stack)
   process.exit(1)
