@@ -1,6 +1,6 @@
-# imgcat [![NPM version](https://img.shields.io/npm/v/imgcat.svg)](https://npmjs.com/package/imgcat) [![NPM downloads](https://img.shields.io/npm/dm/imgcat.svg)](https://npmjs.com/package/imgcat) [![Build Status](https://img.shields.io/circleci/project/egoist/imgcat/master.svg)](https://circleci.com/gh/egoist/imgcat)
+# imgcat [![NPM version](https://img.shields.io/npm/v/imgcat.svg)](https://npmjs.com/package/imgcat) [![NPM downloads](https://img.shields.io/npm/dm/imgcat.svg)](https://npmjs.com/package/imgcat)
 
-> Display image in iTerm2 version 2.9+
+This module is a high level wrapper of SindreSorhus's [term-img](https://github.com/sindresorhus/term-img), to display images from both URL and file path. Actually this requires iTerm 2.9+ too.
 
 ## Install
 
