@@ -25,7 +25,7 @@ imgcat('http://path/to/image')
 
 ## API
 
-### imgcat(input, [options])
+### imgcat(input, [options, events])
 
 #### input
 
@@ -36,6 +36,34 @@ Image path or URL.
 #### options
 
 [term-img](https://github.com/sindresorhus/term-img) options. See https://github.com/sindresorhus/term-img#api.
+
+#### events
+
+Type: `object`
+
+##### before
+
+Type: `function`
+
+Everything started.
+
+##### after
+
+Type: `function`
+
+Everything done.
+
+##### beforeDownload
+
+Type: `function`
+
+The download is started.
+
+##### afterDownload
+
+Type: `function`
+
+The download is done.
 
 ## License
 
