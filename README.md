@@ -65,6 +65,10 @@ Type: `function`
 
 The download is done.
 
+## Related
+
+- [imgcat-cli](https://github.com/egoist/imgcat-cli) - CLI of this module.
+
 ## License
 
 MIT © [EGOIST](https://github.com/egoist)
