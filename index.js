@@ -10,7 +10,8 @@ const pget = require('pget')
 module.exports = co.wrap(function* (file, options, events) {
   const on = events || {}
   on.before && on.before()
-  let tempPath, image
+  let tempPath
+  let image
   if (isUrl(file)) {
     tempPath = tempFile()
     const dir = path.dirname(tempPath)
