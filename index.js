@@ -3,14 +3,14 @@
 const path = require('path')
 const co = require('co')
 const tempFile = require('tempfile')
-const termImg = require('term-img')
+const termImg = require('term-img2')
 const isUrl = require('is-url')
 const pget = require('pget')
 
 module.exports = co.wrap(function* (file, options, events) {
   const on = events || {}
   on.before && on.before()
-  let tempPath
+  let tempPath, image
   if (isUrl(file)) {
     tempPath = tempFile()
     const dir = path.dirname(tempPath)
@@ -18,10 +18,10 @@ module.exports = co.wrap(function* (file, options, events) {
     on.beforeDownload && on.beforeDownload()
     yield pget(file, {dir, target, quiet: true})
     on.afterDownload && on.afterDownload()
-    yield termImg(tempPath, options)
+    image = termImg(tempPath, options)
   } else {
-    yield termImg(file, options)
+    image = termImg(file, options)
   }
   on.after && on.after()
-  return tempPath || file
+  return image
 })

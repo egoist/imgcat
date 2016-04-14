@@ -15,15 +15,16 @@ const imgcat = require('imgcat')
 
 // print image from file
 imgcat('a.gif')
-  .then(tempPath => {
-    console.log(`temp path of the downloaded image: ${tempPath}`)
+  .then(image => {
+    console.log(image)
   })
   .catch(e => {
     console.log(e.name)
   })
 
 // print image from url
-imgcat('http://path/to/image')
+// console.log directly
+imgcat('http://path/to/image', {log: true})
 ```
 
 ## API
@@ -38,7 +39,7 @@ Image path or URL.
 
 #### options
 
-[term-img](https://github.com/sindresorhus/term-img) options. See https://github.com/sindresorhus/term-img#api.
+[term-img2](https://github.com/EGOIST-robot/term-img2) options. See https://github.com/sindresorhus/term-img#api.
 
 #### events
 

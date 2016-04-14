@@ -23,8 +23,8 @@ co(function* () {
       console.log('after')
     }
   }
-  const tempPath2 = yield imgcat('http://ww4.sinaimg.cn/large/a15b4afegw1enz38of1lug20dw07t1kx.gif', {}, events)
-  console.log(tempPath2)
+  const image = yield imgcat('http://ww4.sinaimg.cn/large/a15b4afegw1enz38of1lug20dw07t1kx.gif', {}, events)
+  console.log(image)
 }).catch(e => {
   console.log(e.stack)
   process.exit(1)
